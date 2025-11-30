@@ -1,0 +1,23 @@
+ALGORITHM checkpoint
+VAR
+    ch :STRING
+    nbrs ,nbrw ,nbrv : INTEGER :=0
+    nbrw:=1
+    i:INTEGER:=0
+    
+BEGIN
+
+    write("write a phrase that ends with a point")
+    read (ch[i])
+    WHILE (ch[i]<>.) DO
+    nbrs=nbrs+1
+    IF (ch[i]==" ") THEN
+        nbrw=nbrw+1
+    END_IF
+    IF (ch[i]=='a'or'i'or'u'or'o'or'y') THEN
+        nbrv=nbrv+1
+    END_IF
+
+    
+    END_WHILE
+END
